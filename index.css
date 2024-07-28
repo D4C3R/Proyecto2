@@ -32,15 +32,8 @@ justify-content: space-between;
     margin-right: 25%; 
     width: 50%;
 }
-.headerforms{
-    display: flex;
-    flex-direction: row;
-    justify-content: center; 
-    background-color: black;
-    color: rgb(255, 255, 255);
-    width: 100%;
-}
 .listatareas{
+
     display: flex; 
     flex-direction: column;
     background-color: azure;
@@ -57,34 +50,23 @@ justify-content: space-between;
     color: rgb(255, 255, 255);
     width: 100%;
 }
-.divregistro{
-    display: flex; 
-    flex-direction: column;
-    background-color: azure;
-    color: black;
-    margin-left: 25%;
-    margin-right: 25%; 
-    width: 50%;
+.task-container{
+    border-color: black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .pie{
     height:7.7vh;
+    height: 100%;
     width: 100%;
     background-color: black;
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
+}
+@media screen  and (max-width: 765px){
+    .navbar{
+        background-color: darkgoldenrod;
+    }
+    .pie{
+       background-color: darkgoldenrod;
+    }
 }

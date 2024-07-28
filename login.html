@@ -11,28 +11,34 @@
     <header>
         <nav class="navbar">
             <div class="emblema">
-            <a href="index.html"><img src="https://wiki.starbasegame.com/images/thumb/3/36/Finalmaybe.png/350px-Finalmaybe.png" alt="Icono del imperio" height="40%" width="40%" class="logo"></a>
+            <img src="https://wiki.starbasegame.com/images/thumb/3/36/Finalmaybe.png/350px-Finalmaybe.png" alt="Icono del imperio" height="40%" width="40%" class="logo">
             Imperio de la humanidad
             </div>
             <section class="enlaces">
-                <a href="login.html">Inicio de sesión</a>
-                <a href="registro.html">Registrese</a>
+                <a href="registro.html">Registre su usuario</a>
+                
             </section>
         </nav>
     </header>
     <br><br><br>
     <div class="divlogin">
         <header class="headerforms">
-            <h2>Inicie su sesión</h2>
+            Inicie su sesión
         </header>
-        <input type="text" id="usuariologin" placeholder="ingrese su nombre usuario" required>
-        <br>
-        <input type="password" id="contraseñalogin" placeholder="Ingrese su contraseña" required>
-        <br>
-        <button type="submit" id="logear">iniciar sesión</button>
+        <form id="loginForm" class="divlogin">
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    
+        <p id="error-message" style="color: rgb(0, 0, 0); display: none;">Usuario o contraseña incorrectos.</p>
     </div>
-    <br><br><br><br><br><br><br><br><br>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <br><br><br><br><br><br><br>
+    <script src="login.js"></script>
     <footer class="pie">
         Alabado sea el dios emperador, gloria eterna al maestro de la humanidad!
     </footer>  
