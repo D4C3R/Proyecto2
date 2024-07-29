@@ -9,7 +9,7 @@ registroForm.addEventListener('submit', function(event) {
     event.preventDefault(); // Evitar el envío del formulario
 
         // Obtener los valores de los campos
-        const username = document.getElementById('username').value;
+        const username = document.getElementById('username').value; 
         const password = document.getElementById('password').value;
 
         // Guardar en localStorage

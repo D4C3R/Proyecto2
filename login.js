@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (username === storedUsername && password === storedPassword) {
             // Redirigir a index.html
             window.location.href = 'index.html';
-        } else {
+        } else { 
             // Mostrar mensaje de error
             errorMessage.style.display = 'block';
         }
