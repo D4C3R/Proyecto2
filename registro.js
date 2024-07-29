@@ -18,7 +18,7 @@ registroForm.addEventListener('submit', function(event) {
        
         //Verificar si el usuario ya existe
         if (username === storedUsername && password === storedPassword) {
-            alert('El usuario ya esta registrado, por favor ingrese un usuario existente')
+            alert('El usuario ya esta registrado, por favor registre un usuario')
         } else {
         // Limpiar los campos del formulario
         registroForm.reset();

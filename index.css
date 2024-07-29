@@ -64,9 +64,9 @@ justify-content: space-between;
 }
 @media screen  and (max-width: 765px){
     .navbar{
-        background-color: darkgoldenrod;
+        background-color: rgb(47, 45, 42);
     }
     .pie{
-       background-color: darkgoldenrod;
+       background-color: rgb(47, 45, 42);
     }
 }
