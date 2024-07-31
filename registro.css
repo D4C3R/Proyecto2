@@ -48,9 +48,19 @@ body{
 } 
 @media screen  and (max-width: 765px){
     .navbar{
-        background-color: darkgoldenrod;
+        background-color: rgb(0, 0, 91);
+        
+    }
+    body{
+    background-image: url(https://w0.peakpx.com/wallpaper/312/480/HD-wallpaper-ultramarines-banner-40k-warhammer-warhammer-40k.jpg);
+    background-size: auto;
+    background-repeat: repeat;
     }
     .pie{
-       background-color: darkgoldenrod;
+       background-color: rgb(0, 0, 91);
+    }
+    .headerforms{
+        background-color: rgb(0, 0, 91);
+        color: rgb(210, 214, 0);
     }
 }

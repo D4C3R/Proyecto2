@@ -20,13 +20,16 @@ function loadEvents() {
 // Añade un evento al Local Storage
 function addEvent() {
     const eventInput = document.getElementById('event').value;
+    const events = JSON.parse(localStorage.getItem('events')) || [];
     const dateInput = document.getElementById('date').value;
     if (!eventInput || !dateInput) {
         alert('Por favor, completa ambos campos.');
         return;
     }
+    
+    
 
-    const events = JSON.parse(localStorage.getItem('events')) || [];
+ 
     events.push({ text: eventInput, date: dateInput });
     localStorage.setItem('events', JSON.stringify(events));
 
@@ -34,7 +37,9 @@ function addEvent() {
     document.getElementById('date').value = '';
 
     loadEvents();
+
 }
+
 
 // Edita un evento en el Local Storage
 function editEvent(index) {
